@@ -38,5 +38,129 @@
       "Cook vegetables with spices.",
       "Layer rice and veggies, cook on low flame."
     ]
+  },
+  {
+    "id": 3,
+    "name": "Grilled Chicken Salad",
+    "tags": ["healthy", "high protein", "low calorie"],
+    "calories": 300,
+    "protein": 35,
+    "ingredients": [
+      "200g chicken breast",
+      "1 cucumber",
+      "1 tomato",
+      "lettuce",
+      "salad dressing"
+    ],
+    "utensils": ["grill pan", "knife", "bowl"],
+    "procedure": [
+      "Grill chicken with spices.",
+      "Chop vegetables.",
+      "Mix all ingredients with dressing.",
+      "Serve fresh."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Masala Dosa",
+    "tags": ["south indian", "vegetarian", "crispy"],
+    "calories": 400,
+    "protein": 12,
+    "ingredients": [
+      "2 cups dosa batter",
+      "2 potatoes",
+      "1 onion",
+      "spices",
+      "oil"
+    ],
+    "utensils": ["tawa", "spatula", "pan"],
+    "procedure": [
+      "Prepare potato masala.",
+      "Heat dosa tawa, spread batter thinly.",
+      "Add masala filling and fold.",
+      "Serve hot with chutney."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Oats Porridge",
+    "tags": ["breakfast", "healthy", "quick"],
+    "calories": 250,
+    "protein": 10,
+    "ingredients": [
+      "1 cup oats",
+      "2 cups milk",
+      "1 tbsp honey",
+      "fruits/nuts"
+    ],
+    "utensils": ["pot", "spoon", "bowl"],
+    "procedure": [
+      "Boil oats in milk until thick.",
+      "Sweeten with honey.",
+      "Top with fruits and nuts.",
+      "Serve warm."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Spaghetti Aglio e Olio",
+    "tags": ["italian", "pasta", "vegetarian"],
+    "calories": 500,
+    "protein": 14,
+    "ingredients": [
+      "200g spaghetti",
+      "4 garlic cloves",
+      "3 tbsp olive oil",
+      "chili flakes",
+      "parsley"
+    ],
+    "utensils": ["pot", "pan", "tongs"],
+    "procedure": [
+      "Boil spaghetti until al dente.",
+      "Fry garlic in olive oil.",
+      "Add chili flakes, spaghetti, and parsley.",
+      "Toss well and serve."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Greek Yogurt Parfait",
+    "tags": ["dessert", "healthy", "protein-rich"],
+    "calories": 200,
+    "protein": 15,
+    "ingredients": [
+      "1 cup greek yogurt",
+      "1/2 cup granola",
+      "fruits (berries, banana)",
+      "1 tbsp honey"
+    ],
+    "utensils": ["glass", "spoon"],
+    "procedure": [
+      "Layer yogurt, granola, and fruits in a glass.",
+      "Drizzle honey on top.",
+      "Repeat layers if needed.",
+      "Serve chilled."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Shakshuka",
+    "tags": ["middle eastern", "eggs", "spicy"],
+    "calories": 350,
+    "protein": 18,
+    "ingredients": [
+      "2 eggs",
+      "2 tomatoes",
+      "1 onion",
+      "1 bell pepper",
+      "spices"
+    ],
+    "utensils": ["pan", "spatula"],
+    "procedure": [
+      "Cook onions, tomatoes, and peppers with spices.",
+      "Make small wells and crack eggs in.",
+      "Cover and cook until eggs are set.",
+      "Serve with bread."
+    ]
   }
 ]
