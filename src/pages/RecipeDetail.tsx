@@ -53,13 +53,13 @@ export default function RecipeDetail() {
   const imagePath = `/images/${recipe.id}.jpg`;
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white px-6 py-10">
+    <div className="min-h-screen bg-[#FFF8F0] text-[#2E2E2E] px-6 py-10">
       {/* Header */}
       <div className="mb-8 flex items-center justify-between">
-        <h1 className="text-4xl font-bold">{recipe.name}</h1>
+        <h1 className="text-4xl font-bold text-[#FF7B54]">{recipe.name}</h1>
         <button
           onClick={() => navigate(-1)}
-          className="px-4 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg"
+          className="px-4 py-2 bg-[#FF8C42] hover:bg-[#FF7B54] text-white rounded-lg transition-colors"
         >
           Back
         </button>
@@ -70,8 +70,8 @@ export default function RecipeDetail() {
         {/* Left: Ingredients + Utensils */}
         <div className="space-y-6">
           <div>
-            <h2 className="text-2xl font-semibold mb-3">Ingredients</h2>
-            <ul className="list-disc list-inside text-gray-300 space-y-1">
+            <h2 className="text-2xl font-semibold mb-3 text-[#FF5722]">Ingredients</h2>
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
               {recipe.ingredients.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}
@@ -79,8 +79,8 @@ export default function RecipeDetail() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold mb-3">Utensils</h2>
-            <ul className="list-disc list-inside text-gray-300 space-y-1">
+            <h2 className="text-2xl font-semibold mb-3 text-[#FF5722]">Utensils</h2>
+            <ul className="list-disc list-inside text-gray-700 space-y-1">
               {recipe.utensils.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}
@@ -93,30 +93,41 @@ export default function RecipeDetail() {
           <img
             src={imagePath}
             alt={recipe.name}
-            className="max-w-sm w-full rounded-lg object-cover border border-gray-700"
+            className="max-w-sm w-full rounded-lg object-cover border border-orange-200 shadow-md"
+            onError={(e) => (e.currentTarget.src = "/images/placeholder.jpg")}
           />
         </div>
-
       </div>
 
       {/* Nutrition Info */}
-      <div className="mt-10 bg-gray-800 p-6 rounded-lg border border-gray-700">
-        <h2 className="text-2xl font-semibold mb-4">Nutritional Info</h2>
-        <div className="flex gap-6 text-gray-300">
-          <span>🔥 {recipe.calories} Calories</span>
-          <span>💪 {recipe.protein}g Protein</span>
+      <div className="mt-10 bg-white p-6 rounded-xl border border-orange-200 shadow-md">
+        <h2 className="text-2xl font-semibold mb-4 text-[#FF5722]">Nutritional Info</h2>
+        <div className="flex gap-4 flex-wrap">
+          <span className="flex items-center gap-2 bg-orange-100 text-orange-700 px-3 py-1 rounded-full">
+            🔥 {recipe.calories} Calories
+          </span>
+          <span className="flex items-center gap-2 bg-orange-100 text-orange-700 px-3 py-1 rounded-full">
+            💪 {recipe.protein}g Protein
+          </span>
         </div>
       </div>
 
       {/* Instructions */}
       <div className="mt-10">
-        <h2 className="text-2xl font-semibold mb-4">Instructions</h2>
-        <ol className="list-decimal list-inside space-y-3 text-gray-300">
+        <h2 className="text-2xl font-semibold mb-4 text-[#FF5722]">Instructions</h2>
+        <ol className="space-y-4">
           {recipe.procedure.map((step, idx) => (
-            <li key={idx}>{step}</li>
+            <li key={idx} className="flex items-start gap-3">
+              <span className="flex-shrink-0 w-7 h-7 flex items-center justify-center 
+                         bg-orange-500 text-white font-bold rounded-full">
+                {idx + 1}
+              </span>
+              <p className="text-gray-700">{step}</p>
+            </li>
           ))}
         </ol>
       </div>
+
     </div>
   );
 }
