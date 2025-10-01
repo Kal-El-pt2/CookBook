@@ -12,143 +12,41 @@ interface Recipe {
   procedure: string[];
 }
 
-// Recipe Card Component
-
-
-// Static recipe data
-const ALL_RECIPES: Recipe[] = [
-  {
-    id: 1,
-    name: "Paneer Butter Masala",
-    calories: 450,
-    protein: 20,
-    tags: ["spicy", "vegetarian", "high calorie"],
-    ingredients: [],
-    utensils: [],
-    procedure: [],
-  },
-  {
-    id: 2,
-    name: "Veg Biryani",
-    calories: 600,
-    protein: 15,
-    tags: ["spicy", "rice", "high calorie"],
-    ingredients: [],
-    utensils: [],
-    procedure: [],
-  },
-  {
-    id: 3,
-    name: "Greek Salad",
-    calories: 250,
-    protein: 8,
-    tags: ["healthy", "vegetarian", "low calorie"],
-    ingredients: [],
-    utensils: [],
-    procedure: [],
-  },
-  {
-    id: 4,
-    name: "Grilled Chicken",
-    calories: 350,
-    protein: 45,
-    tags: ["high protein", "low calorie"],
-    ingredients: [],
-    utensils: [],
-    procedure: [],
-  },
-  {
-    id: 5,
-    name: "Chocolate Cake",
-    calories: 550,
-    protein: 6,
-    tags: ["sweet", "dessert", "high calorie"],
-    ingredients: [],
-    utensils: [],
-    procedure: [],
-  },
-  {
-    id: 6,
-    name: "Protein Smoothie",
-    calories: 300,
-    protein: 30,
-    tags: ["high protein", "healthy", "drink"],
-    ingredients: [],
-    utensils: [],
-    procedure: [],
-  },
-  {
-    id: 7,
-    name: "Dal Makhani",
-    calories: 400,
-    protein: 18,
-    tags: ["spicy", "vegetarian", "high calorie"],
-    ingredients: [],
-    utensils: [],
-    procedure: [],
-  },
-  {
-    id: 8,
-    name: "Chicken Tikka",
-    calories: 320,
-    protein: 40,
-    tags: ["spicy", "high protein"],
-    ingredients: [],
-    utensils: [],
-    procedure: [],
-  },
-  {
-    id: 9,
-    name: "Fruit Salad",
-    calories: 150,
-    protein: 3,
-    tags: ["healthy", "vegetarian", "low calorie"],
-    ingredients: [],
-    utensils: [],
-    procedure: [],
-  },
-  {
-    id: 10,
-    name: "Pasta Alfredo",
-    calories: 650,
-    protein: 22,
-    tags: ["high calorie", "vegetarian"],
-    ingredients: [],
-    utensils: [],
-    procedure: [],
-  },
-  {
-    id: 11,
-    name: "Quinoa Bowl",
-    calories: 380,
-    protein: 14,
-    tags: ["healthy", "vegetarian"],
-    ingredients: [],
-    utensils: [],
-    procedure: [],
-  },
-  {
-    id: 12,
-    name: "Fish Curry",
-    calories: 420,
-    protein: 35,
-    tags: ["spicy", "high protein"],
-    ingredients: [],
-    utensils: [],
-    procedure: [],
-  },
-];
-
 export default function Home() {
-  const [filteredRecipes, setFilteredRecipes] = useState<Recipe[]>(ALL_RECIPES);
+  const [allRecipes, setAllRecipes] = useState<Recipe[]>([]);
+  const [filteredRecipes, setFilteredRecipes] = useState<Recipe[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [cardSize, setCardSize] = useState<"small" | "medium" | "large">("medium");
   const [calorieFilter, setCalorieFilter] = useState<[number, number]>([0, 1000]);
   const [proteinFilter, setProteinFilter] = useState<[number, number]>([0, 100]);
   const [showFilters, setShowFilters] = useState(false);
 
+  // Fetch recipes from JSON file
   useEffect(() => {
-    const filtered = ALL_RECIPES.filter((recipe) => {
+    const fetchRecipes = async () => {
+      try {
+        const response = await fetch('/recipes.json');
+        if (!response.ok) {
+          throw new Error('Failed to fetch recipes');
+        }
+        const data = await response.json();
+        setAllRecipes(data);
+        setFilteredRecipes(data);
+        setLoading(false);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : 'Failed to load recipes');
+        setLoading(false);
+      }
+    };
+
+    fetchRecipes();
+  }, []);
+
+  // Filter recipes based on search and filters
+  useEffect(() => {
+    const filtered = allRecipes.filter((recipe) => {
       const matchesSearch =
         searchQuery === "" ||
         recipe.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -168,13 +66,36 @@ export default function Home() {
     });
 
     setFilteredRecipes(filtered);
-  }, [searchQuery, calorieFilter, proteinFilter]);
+  }, [searchQuery, calorieFilter, proteinFilter, allRecipes]);
 
   const resetFilters = () => {
     setCalorieFilter([0, 1000]);
     setProteinFilter([0, 100]);
     setSearchQuery("");
   };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-6xl mb-4">🍽️</div>
+          <p className="text-xl">Loading recipes...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-6xl mb-4">⚠️</div>
+          <p className="text-xl text-red-400">{error}</p>
+          <p className="text-gray-400 mt-2">Make sure recipes.json exists in the public folder</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-900 text-white px-4 sm:px-6 lg:px-8 py-8">
