@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Paneer Butter Masala",
+    "tags": ["spicy", "vegetarian", "high calorie"],
+    "calories": 450,
+    "protein": 20,
+    "ingredients": [
+      "200g paneer",
+      "2 onions",
+      "2 tomatoes",
+      "2 tbsp butter",
+      "spices"
+    ],
+    "utensils": ["pan", "spatula", "blender"],
+    "procedure": [
+      "Chop onions and tomatoes.",
+      "Fry onions, add tomatoes, make paste.",
+      "Cook with butter and spices.",
+      "Add paneer and simmer."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Veg Biryani",
+    "tags": ["spicy", "rice", "high calorie"],
+    "calories": 600,
+    "protein": 15,
+    "ingredients": [
+      "1 cup basmati rice",
+      "1 cup mixed vegetables",
+      "spices",
+      "oil/ghee"
+    ],
+    "utensils": ["pot", "spoon"],
+    "procedure": [
+      "Wash and soak rice.",
+      "Cook vegetables with spices.",
+      "Layer rice and veggies, cook on low flame."
+    ]
+  }
+]
