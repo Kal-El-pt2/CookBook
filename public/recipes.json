@@ -1,166 +1,393 @@
 [
   {
     "id": 1,
-    "name": "Paneer Butter Masala",
-    "tags": ["spicy", "vegetarian", "high calorie"],
-    "calories": 450,
+    "name": "Chole Chat",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
     "protein": 20,
     "ingredients": [
-      "200g paneer",
-      "2 onions",
-      "2 tomatoes",
-      "2 tbsp butter",
-      "spices"
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
     ],
-    "utensils": ["pan", "spatula", "blender"],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
     "procedure": [
-      "Chop onions and tomatoes.",
-      "Fry onions, add tomatoes, make paste.",
-      "Cook with butter and spices.",
-      "Add paneer and simmer."
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
     ]
   },
   {
     "id": 2,
-    "name": "Veg Biryani",
-    "tags": ["spicy", "rice", "high calorie"],
-    "calories": 600,
-    "protein": 15,
+    "name": "White Sauce Pasta",
+    "tags": ["Italian", "Creamy", "High calorie"],
+    "calories": 930,
+    "protein": 35,
     "ingredients": [
-      "1 cup basmati rice",
-      "1 cup mixed vegetables",
-      "spices",
-      "oil/ghee"
+      "100g Pasta",
+      "20g Maida",
+      "20g Butter ",
+      "250g Milk",
+      "60g Cheese/ 3 cheese slices",
+      "Salt",
+      "Pasta Seasoning",
+      "Mirch(optional)"
     ],
-    "utensils": ["pot", "spoon"],
+    "utensils": ["Pot", "Pan", "Strainer"],
     "procedure": [
-      "Wash and soak rice.",
-      "Cook vegetables with spices.",
-      "Layer rice and veggies, cook on low flame."
+      "Soak 100g Pasta with some salt in a pot and cook properly.",
+      "Simultaneously, add 20g butter in a pan and melt it.",
+      "On low heat, add 20g maida into melted butter.",
+      "On high heat, add 250g milk in 3 portions(to avoid lumps).",
+      "On low heat, add some salt and pasta seasoning.",
+      "On low heat, add cheese and mix until cheese is melted."
     ]
   },
   {
     "id": 3,
-    "name": "Grilled Chicken Salad",
-    "tags": ["healthy", "high protein", "low calorie"],
-    "calories": 300,
-    "protein": 35,
+    "name": "Schezwan Cheese Sandwich",
+    "tags": ["Indian", "spicy", "low calorie"],
+    "calories": 650,
+    "protein": 20,
     "ingredients": [
-      "200g chicken breast",
-      "1 cucumber",
-      "1 tomato",
-      "lettuce",
-      "salad dressing"
+      "100g of bread/ 4 slices of bread",
+      "20g Schezwan",
+      "80g of cheese/ 4 slices of cheese"
     ],
-    "utensils": ["grill pan", "knife", "bowl"],
+    "utensils": ["Sandwiches(optional)"],
     "procedure": [
-      "Grill chicken with spices.",
-      "Chop vegetables.",
-      "Mix all ingredients with dressing.",
-      "Serve fresh."
+      "Spread a cheese slice on each slice of bread.",
+      "Add 10g of schezwan to each sandwich.",
+      "Put in sandwicher."
     ]
   },
   {
     "id": 4,
-    "name": "Masala Dosa",
-    "tags": ["south indian", "vegetarian", "crispy"],
-    "calories": 400,
-    "protein": 12,
+    "name": "Subway Sandwich",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
     "ingredients": [
-      "2 cups dosa batter",
-      "2 potatoes",
-      "1 onion",
-      "spices",
-      "oil"
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
     ],
-    "utensils": ["tawa", "spatula", "pan"],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
     "procedure": [
-      "Prepare potato masala.",
-      "Heat dosa tawa, spread batter thinly.",
-      "Add masala filling and fold.",
-      "Serve hot with chutney."
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
     ]
   },
   {
-    "id": 5,
-    "name": "Oats Porridge",
-    "tags": ["breakfast", "healthy", "quick"],
-    "calories": 250,
-    "protein": 10,
+    "id": 13,
+    "name": "Pulao",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
     "ingredients": [
-      "1 cup oats",
-      "2 cups milk",
-      "1 tbsp honey",
-      "fruits/nuts"
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
     ],
-    "utensils": ["pot", "spoon", "bowl"],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
     "procedure": [
-      "Boil oats in milk until thick.",
-      "Sweeten with honey.",
-      "Top with fruits and nuts.",
-      "Serve warm."
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
     ]
   },
   {
-    "id": 6,
-    "name": "Spaghetti Aglio e Olio",
-    "tags": ["italian", "pasta", "vegetarian"],
-    "calories": 500,
-    "protein": 14,
+    "id": 14,
+    "name": "Paneer Pulao",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
     "ingredients": [
-      "200g spaghetti",
-      "4 garlic cloves",
-      "3 tbsp olive oil",
-      "chili flakes",
-      "parsley"
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
     ],
-    "utensils": ["pot", "pan", "tongs"],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
     "procedure": [
-      "Boil spaghetti until al dente.",
-      "Fry garlic in olive oil.",
-      "Add chili flakes, spaghetti, and parsley.",
-      "Toss well and serve."
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
     ]
   },
   {
-    "id": 7,
-    "name": "Greek Yogurt Parfait",
-    "tags": ["dessert", "healthy", "protein-rich"],
-    "calories": 200,
-    "protein": 15,
+    "id": 15,
+    "name": "Veg Schezwan Fried Rice",
+    "tags": ["Continental", "spicy", "tasty asf"],
+    "calories": 435,
+    "protein": 20,
     "ingredients": [
-      "1 cup greek yogurt",
-      "1/2 cup granola",
-      "fruits (berries, banana)",
-      "1 tbsp honey"
+      "100g Rice",
+      "100g capsicum(optional)",
+      "100g Onion",
+      "20g Oil",
+      "Salt",
+      "1 packet Schezwan masala",
+      "50 g Carrot"
     ],
-    "utensils": ["glass", "spoon"],
+    "utensils": ["Pan", "Chopper"],
     "procedure": [
-      "Layer yogurt, granola, and fruits in a glass.",
-      "Drizzle honey on top.",
-      "Repeat layers if needed.",
-      "Serve chilled."
+      "Wash rice and prepare rice",
+      "Chop all the vegetables using chopper",
+      "Place oil in pan and add vegetables and saute",
+      "Bonus: Squeeze lemon on top.",
+      "Add cooked rice into pan.",
+      "Add schezwan masala into pan and mix"
     ]
   },
   {
-    "id": 8,
-    "name": "Shakshuka",
-    "tags": ["middle eastern", "eggs", "spicy"],
-    "calories": 350,
-    "protein": 18,
+    "id": 16,
+    "name": "Paneer Schezwan Fried Rice",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
     "ingredients": [
-      "2 eggs",
-      "2 tomatoes",
-      "1 onion",
-      "1 bell pepper",
-      "spices"
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
     ],
-    "utensils": ["pan", "spatula"],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
     "procedure": [
-      "Cook onions, tomatoes, and peppers with spices.",
-      "Make small wells and crack eggs in.",
-      "Cover and cook until eggs are set.",
-      "Serve with bread."
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Rajma Chawal",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
+    "ingredients": [
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
+    ],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
+    "procedure": [
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Aloo Matar with Paratha",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
+    "ingredients": [
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
+    ],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
+    "procedure": [
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Cheese slice Sandwich with Schezwan",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
+    "ingredients": [
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
+    ],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
+    "procedure": [
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Cornflakes",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
+    "ingredients": [
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
+    ],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
+    "procedure": [
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Cornflakes with Peanut Butter",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
+    "ingredients": [
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
+    ],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
+    "procedure": [
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Paneer gravy with paratha",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
+    "ingredients": [
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
+    ],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
+    "procedure": [
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Schezwan Fried Rice",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
+    "ingredients": [
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
+    ],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
+    "procedure": [
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Mac and Cheese",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
+    "ingredients": [
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
+    ],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
+    "procedure": [
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Yipee",
+    "tags": ["Indian", "spicy", "high protein", "low calorie"],
+    "calories": 435,
+    "protein": 20,
+    "ingredients": [
+      "100g Dry Black Chana",
+      "70g Tomato",
+      "100g Onion",
+      "Salt",
+      "Chat Masala",
+      "Spices"
+    ],
+    "utensils": ["pressure cooker", "Pan", "Chopper"],
+    "procedure": [
+      "Soak 100g black chana overnight.",
+      "Put soaked chana in pressure cooker 4 whistles on high and 3 on low.",
+      "Chop 100g onion and 70g Tomato in chopper.",
+      "After Chana is prepared mix with vegetables and add salt,spice and chat masala according to taste.",
+      "Bonus: Squeeze lemon on top."
     ]
   }
 ]
